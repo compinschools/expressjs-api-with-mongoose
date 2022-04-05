@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 const router = require('./router');
 const mongoose = require('mongoose');
-const uri = "";
+const uri = "mongodb+srv://mongo-colin:p4ssword@cluster0.ywlkz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 app.use(express.json());
 app.use(router);
