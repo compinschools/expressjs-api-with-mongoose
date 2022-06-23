@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 3000
 const router = require('./router');
 const mongoose = require('mongoose');
-const uri = "";
+const uri = "mongodb+srv://mongo-colin:p4ssw0rd@cluster0.ywlkz.mongodb.net/adverts?retryWrites=true&w=majority";
 
 app.use(express.json());
 app.use(router);
